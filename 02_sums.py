@@ -18,27 +18,21 @@ def calculate_sum(numbers):
 
 
 
-
+numbers = []
 # Use our summing algorithm to create a small program
-def practice_sums():
-    numbers = []
+while True:
+    
     print("\nCurrent numbers:", numbers)
-    if numbers:
-        print("Current sum:", calculate_sum(numbers))
     
     number = int(input("\nEnter a number (or 0 to finish): "))
 
-    # if the user enters a 0, exit the while True loop
+    # if the user enters a 0, exit the while True loop and print the results
     if number == 0:
-        break
-        
-    numbers.append(number)
-    
-    if numbers:
         print("\nFinal Results:")
         print("Numbers entered:", numbers)
         print("Total sum:", calculate_sum(numbers))
         print("Number of values added:", len(numbers))
-
-while True:
-    practice_sums()
+        numbers = []
+        break
+        
+    numbers.append(number)
