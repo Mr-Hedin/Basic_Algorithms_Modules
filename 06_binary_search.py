@@ -15,14 +15,14 @@ def instructions():
 def binary_search(numbers, target):
     """
     Search for a number using binary search.
-    Returns the position if found, or -1 if not found.
+    Returns the position index if found, or -1 if not found.
     """
     left_index = 0
     right_index = len(numbers) - 1
     
     while left_index <= right_index:
         middle_index = (left_index + right_index) // 2
-        print(f"Checking middle position {middle_index}: {numbers[middle_index]}")
+        print(f"Checking middle index {middle_index}: {numbers[middle_index]}")
         if numbers[middle_index] == target:
             return middle_index
         elif numbers[middle_index] < target:
