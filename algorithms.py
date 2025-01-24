@@ -103,32 +103,6 @@ def binary_search(numbers, target):
     print(f"{target} not found in the list")
     return -1
 
-def linear_search_with_steps(numbers, target):
-    """Linear search implementation."""
-    steps = 0
-    for i in range(len(numbers)):
-        steps += 1
-        if numbers[i] == target:
-            return True, steps
-    return False, steps
-
-def binary_search_with_steps(numbers, target):
-    """Binary search implementation."""
-    steps = 0
-    left = 0
-    right = len(numbers) - 1
-    
-    while left <= right:
-        steps += 1
-        mid = (left + right) // 2
-        if numbers[mid] == target:
-            return True, steps
-        elif numbers[mid] < target:
-            left = mid + 1
-        else:
-            right = mid - 1
-    return False, steps
-
 
 
 
