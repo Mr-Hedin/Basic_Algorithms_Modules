@@ -33,11 +33,13 @@ start_time = time.time()
 algorithms.linear_search(data_set, search_value)
 end_time = time.time()
 linear_time = end_time - start_time
+print(linear_time)
 
 start_time = time.time()
 algorithms.binary_search(data_set, search_value)
 end_time = time.time()
 binary_time = end_time - start_time
+print(binary_time)
 
 # We'll also time our other algorithms to see how they perform.
 # Let's time them using the same process.
@@ -46,21 +48,25 @@ start_time = time.time()
 algorithms.calculate_sum(data_set)
 end_time = time.time()
 sum_time = end_time - start_time
+print(sum_time)
 
 start_time = time.time()
 algorithms.calculate_average(data_set)
 end_time = time.time()
 average_time = end_time - start_time
+print(average_time)
 
 start_time = time.time()
 algorithms.find_min(data_set)
 end_time = time.time()
 min_time = end_time - start_time
+print(min_time)
 
 start_time = time.time()
 algorithms.find_max(data_set)
 end_time = time.time()
 max_time = end_time - start_time
+print(max_time)
 
 
 # Side note: if we were thinking efficiently, we could have used the same process for all of our algorithms.
