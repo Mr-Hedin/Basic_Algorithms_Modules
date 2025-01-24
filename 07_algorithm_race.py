@@ -7,7 +7,7 @@ import time
 import random
 import algorithms
 
-# here we're calling the prepare_a_list function from the algorithms module we created.
+# Here we're calling the prepare_a_list function from the algorithms module we created.
 data_set = algorithms.prepare_a_list()
 
 # We'll find a random target value to search that is within the range of the data_set we just generated.
