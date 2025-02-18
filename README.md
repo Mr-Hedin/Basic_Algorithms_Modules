@@ -19,3 +19,4 @@ Algorithms (and what they do):
 4. Linear Search - Finds a target in a list by searching item by item.
 5. Binary Search - Finds a target in a *sorted* list by splitting the search area in half each step.
 
+algorithms.py contains a toolkit of functions that can be imported for the final project or to test out functions we create in the lessons!
